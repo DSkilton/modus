@@ -138,4 +138,24 @@ public abstract class person {
     public void setNextContact(Date nextContact) {
         this.nextContact = nextContact;
     }
+
+    public person(int personId, String title, String firstName, String lastName, String addA, String addB, String town,
+                  String postcode, String country, String homeNumber, String mobNumber, String status, Date registered,
+                  Date lastContact, Date nextContact) {
+        this.personId = personId;
+        this.title = title;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.addA = addA;
+        this.addB = addB;
+        this.town = town;
+        this.postcode = postcode;
+        this.country = country;
+        this.homeNumber = homeNumber;
+        this.mobNumber = mobNumber;
+        this.status = status;
+        this.registered = registered;
+        this.lastContact = lastContact;
+        this.nextContact = nextContact;
+    }
 }
