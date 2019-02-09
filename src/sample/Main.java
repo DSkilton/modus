@@ -9,8 +9,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
+import view.alertBox;
 
 public class Main extends Application {
 
@@ -80,10 +80,10 @@ public class Main extends Application {
         window.show();
     } // end of primaryStage
 
-    private void closeProgram(){
-//        Boolean answer = ConfirmBox.display("Exit Dialogue", "Are you sure you want to exit?");
-//            if(answer)
-                window.close();
+    private void closeProgram() {
+        boolean answer = alertBox.display("Exit Dialogue", "Are you sure you want to exit");
+        if (answer)
+            window.close();
     }
 }
 // end of class
