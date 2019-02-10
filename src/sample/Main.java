@@ -3,22 +3,25 @@ package sample;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import view.alertBox;
+import view.AlertBox;
 
 public class Main extends Application {
 
     Stage window;
 
     public static void main(String[] args) {
+        // NEEDS WORK --- controller.databaseConnect.getConnection();
         launch(args);
+
+
+
     }//end of main
+
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -81,7 +84,7 @@ public class Main extends Application {
     } // end of primaryStage
 
     private void closeProgram() {
-        boolean answer = alertBox.display("Exit Dialogue", "Are you sure you want to exit");
+        boolean answer = AlertBox.display("Exit Confirmation", "Are you sure you want to exit?");
         if (answer)
             window.close();
     }
