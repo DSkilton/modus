@@ -1,6 +1,7 @@
 package view;
 
 import controller.YesNoAlert;
+import controller.loginLogic;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -16,13 +17,34 @@ public class Login extends Application {
 
     Stage window;
 
+    private String username;
+    private String password;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         window = primaryStage;
         window.setTitle("Login");
         window.setOnCloseRequest(e -> {
             if (YesNoAlert.closeProgram(true)) {
                 e.consume();
+                window.close();
             }
         });
 
@@ -46,6 +68,8 @@ public class Login extends Application {
         //Name Input
         TextField nameInput = new TextField();
         nameInput.setPromptText("username");
+        //store user input for comparing to stored data
+        username = nameInput.getText();
         GridPane.setConstraints(nameInput,1,0);
 
         //Password Label
@@ -55,16 +79,21 @@ public class Login extends Application {
         //Password Input
         TextField passInput = new TextField();
         passInput.setPromptText("password");
+        //store user input for comparing to stored data
+        password = passInput.getText();
         GridPane.setConstraints(passInput,1,1);
 
         Button loginButton = new Button ("Login");
+        loginButton.setOnAction(e -> {
+            if(loginLogic.loginCheck(true))
+                System.out.println("switch to new stage");
+        });
+
         Button cancelButton = new Button("Cancel");
         cancelButton.setOnAction(e -> {
-            if(YesNoAlert.closeProgram(true)){
+            if(YesNoAlert.closeProgram(true))
                 e.consume();
-            }
-
-
+                window.close();
         });
 
         Button helpButton = new Button("Help");

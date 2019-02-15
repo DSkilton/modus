@@ -2,7 +2,6 @@ package controller;
 
 import java.sql.*;
 
-
 public class databaseConnect {
 
     public static Connection getConnection() {
@@ -11,11 +10,15 @@ public class databaseConnect {
 
         try {
             //connection
-            con = DriverManager.getConnection(Password.url, Password.user, Password.password);
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection(Password.URL, Password.USER, Password.PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
             //put this in to see difference between the two messages
             System.out.println("Something went wrong " + e.getMessage());
+        } catch (ClassNotFoundException e) {
+            e.getLocalizedMessage();
+            e.printStackTrace();
         } finally {
 
 

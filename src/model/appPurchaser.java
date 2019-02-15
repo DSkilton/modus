@@ -10,7 +10,7 @@ public class appPurchaser {
     private int beds;
     private String homeStyle;
     private String OwnPropertyStatus;
-    private String purchasetype;
+    private String purchaseType;
     private String parking;
     private boolean isFirstTimeBuyer;
     private boolean isFinanciallyQualified;
@@ -64,12 +64,12 @@ public class appPurchaser {
         OwnPropertyStatus = ownPropertyStatus;
     }
 
-    public String getPurchasetype() {
-        return purchasetype;
+    public String getPurchaseType() {
+        return purchaseType;
     }
 
-    public void setPurchasetype(String purchasetype) {
-        this.purchasetype = purchasetype;
+    public void setPurchaseType(String purchaseType) {
+        this.purchaseType = purchaseType;
     }
 
     public String getParking() {

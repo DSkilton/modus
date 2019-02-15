@@ -1,4 +1,4 @@
-CREATE TABLE `superPerson` (
+CREATE TABLE `superPerson`(
 	`personId` INT NOT NULL AUTO_INCREMENT,
 	`title` VARCHAR(8) NOT NULL,
 	`firstName` VARCHAR(12) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `superPerson` (
 	PRIMARY KEY (`personId`)
 );
 
-CREATE TABLE `applicantPurchaser` (
+CREATE TABLE `applicantPurchaser`(
 	`appPurchaserId` INT NOT NULL AUTO_INCREMENT,
 	`appPurchaserId` INT NOT NULL,
 	`currency` varchar(1) NOT NULL,
