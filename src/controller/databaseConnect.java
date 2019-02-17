@@ -14,7 +14,7 @@ public class databaseConnect {
             con = DriverManager.getConnection(Password.URL, Password.USER, Password.PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
-            //put this in to see difference between the two messages
+            //put this in to see difference between stackTace and .getMessage()
             System.out.println("Something went wrong " + e.getMessage());
         } catch (ClassNotFoundException e) {
             e.getLocalizedMessage();
