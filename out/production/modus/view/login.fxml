@@ -18,14 +18,14 @@
       <TextField fx:id="username" layoutX="269.0" layoutY="132.0" />
       <Text layoutX="182.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
       <Text layoutX="184.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <Button fx:id="login" layoutX="211.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="loginButton" layoutX="211.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
       <PasswordField fx:id="password" layoutX="269.0" layoutY="172.0" />
       <Text layoutX="184.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Together, we can build something great">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Button fx:id="login1" layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Cancel" />
-      <Button fx:id="login11" layoutX="349.0" layoutY="243.0" mnemonicParsing="false" text="Help" />
+      <Button fx:id="cancelButton" layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="helpButton" layoutX="349.0" layoutY="243.0" mnemonicParsing="false" text="Help" />
    </children>
 </Pane>
