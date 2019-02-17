@@ -22,7 +22,7 @@ public class Main extends Application{
 
         public static void main(String[] args) {
             // NEEDS WORK --- controller.databaseConnect.getConnection();
-            Preloader.launch(Main.class, args);
+
             Application.launch(Main.class, args);
         }//end of main
 

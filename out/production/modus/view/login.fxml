@@ -7,8 +7,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
-      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Main">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Modus">
          <font>
@@ -18,7 +18,7 @@
       <TextField fx:id="username" layoutX="269.0" layoutY="132.0" />
       <Text layoutX="182.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
       <Text layoutX="184.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <Button fx:id="login" layoutX="223.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="login" layoutX="211.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
       <PasswordField fx:id="password" layoutX="269.0" layoutY="172.0" />
       <Text layoutX="184.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Together, we can build something great">
          <font>
@@ -26,6 +26,6 @@
          </font>
       </Text>
       <Button fx:id="login1" layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Cancel" />
-      <Button fx:id="login11" layoutX="343.0" layoutY="243.0" mnemonicParsing="false" text="Help" />
+      <Button fx:id="login11" layoutX="349.0" layoutY="243.0" mnemonicParsing="false" text="Help" />
    </children>
 </Pane>
