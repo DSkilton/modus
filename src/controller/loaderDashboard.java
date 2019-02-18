@@ -31,7 +31,7 @@ public class loaderDashboard extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("view/login.fxml"));
             Pane rootLayout = (Pane)loader.load();
-            Login login = loader.getController();
+            loginController login = loader.getController();
 
         } catch (IOException e) {
             e.getStackTrace();

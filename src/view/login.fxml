@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
    <children>
       <Text layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Modus">
          <font>
@@ -25,7 +25,7 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Button fx:id="cancelButton" layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Cancel" />
-      <Button fx:id="helpButton" layoutX="349.0" layoutY="243.0" mnemonicParsing="false" text="Help" />
+      <Button fx:id="cancelButton" layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Cancel" onAction="#cancelButtonAction"/>
+      <Button fx:id="helpButton" layoutX="349.0" layoutY="243.0" mnemonicParsing="false" text="Help" onAction="#helpButtonAction"/>
    </children>
 </Pane>
