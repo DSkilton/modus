@@ -25,7 +25,6 @@ public class Main extends Application{
 
             Application.launch(Main.class, args);
         }//end of main
-
     }// end of class
 
 
