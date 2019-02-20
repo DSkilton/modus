@@ -28,7 +28,7 @@ public class loginController {
         loginButton.setOnAction(e -> {
             try {
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("view/dashboard.fxml"));
+                loader.setLocation(getClass().getClassLoader().getResource("view/dashboard.fxml"));
                 Scene sceneDash = new Scene(loader.load(), 800, 800);
                 Stage stageDash = new Stage();
                 stageDash.setTitle("Modus -> Dashboard");
@@ -36,7 +36,7 @@ public class loginController {
                 stageDash.show();
 
             } catch(IOException e1){
-                e1.getStackTrace();
+                e1.getMessage();
             }
         });
     }
