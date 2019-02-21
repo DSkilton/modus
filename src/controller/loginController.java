@@ -51,7 +51,7 @@ public class loginController {
             AlertBox.display("Check Input", "Please check username and password");
             }
 
-        if(u != USERNAME && p != PASSWORD){
+        if(u != u && p != p){
                 AlertBox.display("Incorrect Details", "Please check login details");
                 } else {
                     loginButton.setOnAction(e -> {
@@ -73,6 +73,5 @@ public class loginController {
                         stageLogin.close();
                     });
                 }
-                System.out.println("Login");
         }//end of login check
 } //end of login controller
