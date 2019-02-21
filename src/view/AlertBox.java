@@ -12,7 +12,6 @@ public class AlertBox {
     static boolean answer;
 
     public static boolean display(String title, String message){
-        System.out.println("answer before yes or no " + answer);
         Stage AlertBox = new Stage();
         AlertBox.initModality(Modality.APPLICATION_MODAL);
         AlertBox.setTitle(title); // title from method
@@ -27,14 +26,11 @@ public class AlertBox {
         yesButton.setOnAction(e -> {
             answer = true;
             AlertBox.close();
-            System.out.println("set on action -> yes " + answer);
-
         });
 
         noButton.setOnAction(e -> {
             answer = false;
             AlertBox.close();
-            System.out.println("set on action -> no " + answer);
         });
 
         HBox layout = new HBox(10);
