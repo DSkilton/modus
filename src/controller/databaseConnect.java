@@ -1,29 +1,28 @@
 package controller;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class databaseConnect {
 
-    public static Connection getConnection() {
+    public static void Connection() {
 
-        Connection con = null;
+        final String connectionUrl = Password.getURL();
 
         try {
-            //connection
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(Password.URL, Password.USER, Password.PASSWORD);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            //put this in to see difference between stackTace and .getMessage()
-            System.out.println("Something went wrong " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            e.getLocalizedMessage();
-            e.printStackTrace();
-        } finally {
 
+//            Class.forName("org.sqlite.JDBC");
+            Connection con = DriverManager.getConnection(connectionUrl);
+            System.out.println("Connected");
+            //while(returnStatement.next()) {
+            //System.out.println("rs.getString");
+            //}
 
-        }
-        System.out.println("Connected to Database -> " + con);
-        return con;
+            } catch (SQLException e) {
+            e.printStackTrace();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
     }
-}
+}}

@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import static controller.databaseConnect.Connection;
+
 public class Main extends Application{
 
     @Override
@@ -22,9 +24,10 @@ public class Main extends Application{
     }// end of start
 
         public static void main(String[] args) {
-            // NEEDS WORK --- controller.databaseConnect.getConnection();
+            // NEEDS WORK ---
+            Connection();
 
-            Application.launch(Main.class, args);
+            //Application.launch(Main.class, args);
         }//end of main
     }// end of class
 
