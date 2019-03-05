@@ -178,27 +178,27 @@
                      <children>
                         <ImageView fitHeight="122.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <image>
-                              <Image url="@../images/netSales.png" />
+                              <Image url="@../../../modusToCopy/src/images/netSales.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="121.0" fitWidth="123.0" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                            <image>
-                              <Image url="@../images/netSalesVsLastYear.png" />
+                              <Image url="@../../../modusToCopy/src/images/netSalesVsLastYear.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="122.0" fitWidth="139.0" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                            <image>
-                              <Image url="@../images/yoySales.png" />
+                              <Image url="@../../../modusToCopy/src/images/yoySales.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="125.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../images/regionPerformance.png" />
+                              <Image url="@../../../modusToCopy/src/images/regionPerformance.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="122.0" fitWidth="177.0" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../images/weeklySales.png" />
+                              <Image url="@../../../modusToCopy/src/images/weeklySales.png" />
                            </image>
                         </ImageView>
                      </children>

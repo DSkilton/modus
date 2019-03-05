@@ -2,7 +2,7 @@ package model;
 
 import java.util.Date;
 
-public class property {
+public abstract class property {
 
     private int propertyId;
     private String addA;

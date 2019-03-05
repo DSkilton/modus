@@ -12,17 +12,11 @@ public class databaseConnect {
 
         try {
 
-//            Class.forName("org.sqlite.JDBC");
             Connection con = DriverManager.getConnection(connectionUrl);
             System.out.println("Connected");
-            //while(returnStatement.next()) {
-            //System.out.println("rs.getString");
-            //}
 
             } catch (SQLException e) {
             e.printStackTrace();
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
+        }
     }
-}}
+}

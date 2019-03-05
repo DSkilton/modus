@@ -2,7 +2,6 @@ package controller;
 
 import javafx.fxml.FXMLLoader;
 import jdk.internal.util.xml.impl.Input;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -20,9 +19,7 @@ public class dashboardController {
 //            public void actionPerformed(ActionEvent e) {
 //                public void actionPerformed(ActionEvent actionEvent){
 //                }
-//
 //            }
 //        };
-//
 //    }
 }
