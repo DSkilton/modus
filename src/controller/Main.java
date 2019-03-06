@@ -6,8 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import static controller.databaseConnect.Connection;
-
 public class Main extends Application{
 
     @Override
@@ -18,7 +16,6 @@ public class Main extends Application{
         stageLogin.setTitle("FXML Welcome");
         stageLogin.setScene(new Scene(root, 800, 300));
         stageLogin.show();
-
     }// end of start
 
         public static void main(String[] args) {
